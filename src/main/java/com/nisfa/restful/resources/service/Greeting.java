@@ -1,4 +1,4 @@
-package com.nisfa.restful.resources;
+package com.nisfa.restful.resources.service;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

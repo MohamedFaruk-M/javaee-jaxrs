@@ -24,7 +24,7 @@ public class Department implements Serializable {
     @Column(nullable = false, unique = true)
     private String deptName;
 
-    @OneToMany(mappedBy = "dept_id")
+    @OneToMany(mappedBy = "department")
     private Set<Employee> employees;
 
     public Department() {

@@ -2,7 +2,6 @@ package com.nisfa.entity;
 
 import java.io.Serializable;
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -28,7 +27,7 @@ public class Employee implements Serializable {
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "dept_id")
-    private Department departmentId;
+    private Department department;
 
 //    @ManyToOne(cascade = CascadeType.PERSIST)
 //    private String designation;
@@ -74,12 +73,12 @@ public class Employee implements Serializable {
         this.name = name;
     }
 
-    public Department getDepartmentId() {
-        return departmentId;
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDepartmentId(Department departmentId) {
-        this.departmentId = departmentId;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
 //    public String getDesignation() {
